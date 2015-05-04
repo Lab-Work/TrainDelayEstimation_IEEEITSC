@@ -71,12 +71,20 @@ Go to fold PythonCode, the provided .py-files can be used to reproduce the resul
 \begin{enumerate}
 \item Download the 2011-2013 Amtrak data from the link provided in reference [2] in the article.
 
-\item Unzip the folders and copy them into the 
+\item Unzip the folders and copy them into the fold: amtrakData
 
-Generate figure one and figure two by running
+\item run unzip.py to unzip all the data from 2011 to 2013
 
-\begin{verbatim}main_solution.m\end{verbatim}
- \item Generate figure three by running
- \begin{verbatim}MC_Coal.m and MC_oil.m\end{verbatim}
+\item run delay\_extraction.py to compute the delay for all trains
+
+\item run generate\_training\_data.py to generate training data
+
+\item run main\_hist\_online\_68 to generate all figures shown in the paper, the results can be found under the folder named results.
+
+\item run main\_online\_interacting.py to see the results for the online regression interacting model (3) and its comparison with online regression model (7) presented in the paper. 
+
+%\begin{verbatim}main_solution.m\end{verbatim}
+ %\item Generate figure three by running
+% \begin{verbatim}MC_Coal.m and MC_oil.m\end{verbatim}
 \end{enumerate}
 \end{document}
