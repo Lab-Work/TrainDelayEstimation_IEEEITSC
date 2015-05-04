@@ -695,7 +695,6 @@ def online_interact(trainID, dictTrainStationsTheTrain, dictStationTrainDepartsT
             MSE_est_sim_station.append(((array(listStationInterEst_sim)-array(listStationInterTrue))**2).mean())            
 
         except:
-            print 'shoud not happen a lot'
             return 0,0,0,0,0,0,0,0,0,0
 
 
@@ -822,8 +821,8 @@ if '__main__' == __name__ :
                     listEstSimMSER.append(average(listEstSimMSERSample))
                     listTrueR.append(average(listTrueRSample))
                     
-                    print 'train: ', trainID
-                    print 'error: ', estInterR, estSimR               
+#                    print 'train: ', trainID
+#                    print 'error: ', estInterR, estSimR               
                 except:
                     pass
                 
