@@ -1,0 +1,82 @@
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{babel}
+\begin{document}
+
+\title{README for ``Data driven approaches for passenger train delay estimation''. }
+
+
+\author{Ren Wang and Daniel B. Work}
+\maketitle
+\begin{abstract}
+This document describes the implementation of regression models introduced in the article
+''Data driven approaches for passenger train delay estimation'' by Wang and Work,
+submitted to the IEEE ITSC 2015. The source code is hosted at \url{https://github.com/Lab-Work/TrainDelayEstimation_IEEEITSC}.
+\end{abstract}
+
+\section{License}
+
+This software is licensed under the \emph{University of Illinois/NCSA
+Open Source License}:
+
+\begin{center}
+Copyright (c) 2015 The Board of Trustees of the University of Illinois.
+All rights reserved.
+\par\end{center}
+
+\begin{center}
+Developed by: Department of Civil and Environmental Engineering University
+of Illinois at Urbana-Champaign \url{https://github.com/Lab-Work/TrainDelayEstimation_IEEEITSC}
+\par\end{center}
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the \textquotedbl{}Software\textquotedbl{}),
+to deal with the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom
+the Software is furnished to do so, subject to the following conditions:
+Redistributions of source code must retain the above copyright notice,
+this list of conditions and the following disclaimers. Redistributions
+in binary form must reproduce the above copyright notice, this list
+of conditions and the following disclaimers in the documentation and/or
+other materials provided with the distribution. Neither the names
+of the Department of Civil and Environmental Engineering, the University
+of Illinois at Urbana-Champaign, nor the names of its contributors
+may be used to endorse or promote products derived from this Software
+without specific prior written permission.
+
+THE SOFTWARE IS PROVIDED \textquotedbl{}AS IS\textquotedbl{}, WITHOUT
+WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE
+AND NONINFRINGEMENT. IN NO EVENT SHALL THE CONTRIBUTORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
+OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH
+THE SOFTWARE.
+
+
+%\section{Publishing results using this software}
+
+%We kindly ask any future publications using this software include
+%a reference to the following publication:
+
+%R. Wang and D. B. Work, ``Application of robust optimization in matrix-based LCI for decision making under uncertainty'', 
+ %\emph{Networks and Heterogeneous Media}, 2013.
+
+\section{Running the code}
+Go to fold PythonCode, the provided .py-files can be used to reproduce the results presented in the publication.
+\begin{enumerate}
+\item Download the 2011-2013 Amtrak data from the link provided in reference [2] in the article.
+
+\item Unzip the folders and copy them into the 
+
+Generate figure one and figure two by running
+
+\begin{verbatim}main_solution.m\end{verbatim}
+ \item Generate figure three by running
+ \begin{verbatim}MC_Coal.m and MC_oil.m\end{verbatim}
+\end{enumerate}
+\end{document}
